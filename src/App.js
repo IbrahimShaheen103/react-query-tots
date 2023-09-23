@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  NavLink,
+} from "react-router-dom";
 import SuperHeroesPage from "./Components/Superheroes.page";
 import RQSuperHeroesPage from "./Components/RQSuperheroes.page";
 import HomePage from "./Components/Home.page";
@@ -16,13 +21,13 @@ function App() {
           <nav>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <NavLink to="/">Home </NavLink>
               </li>
               <li>
-                <a href="/super-heroes">SuperHeroes</a>
+                <NavLink to="/super-heroes">SuperHeroes</NavLink>
               </li>
               <li>
-                <a href="/rq-super-heroes">RQ SuperHeroes</a>
+                <NavLink to="/rq-super-heroes">RQ SuperHeroes</NavLink>
               </li>
             </ul>
           </nav>

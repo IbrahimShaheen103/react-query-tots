@@ -6,7 +6,10 @@ const fetchData = () => {
 const RQSuperHeroesPage = () => {
   const { data, isLoading, isError, error } = useQuery(
     "super-heroes",
-    fetchData
+    fetchData,
+    {
+      staleTime: 0,
+    }
   );
   if (isLoading) {
     return <div>Loading...</div>;
