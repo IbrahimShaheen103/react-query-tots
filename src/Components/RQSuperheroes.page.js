@@ -8,8 +8,8 @@ const RQSuperHeroesPage = () => {
     "super-heroes",
     fetchData,
     {
-      refetchOnMount: true,
-      refetchOnWindowFocus: "always",
+      refetchInterval: 2000,
+      refetchIntervalInBackground: true,
     }
   );
   if (isLoading) {
