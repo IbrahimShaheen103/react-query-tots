@@ -34,5 +34,7 @@
       "id": 3,
       "name": "ibrahim"
     }
-  ]
+  ],
+  "users": [{ "id": "ibrahim@mail.com", "channelId": "ibrahim" }],
+  "channels": [{ "id": "ibrahim", "courses": ["react", "angular", "nodejs"] }]
 }
