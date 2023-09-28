@@ -1,11 +1,11 @@
 import { useSuperHerosData } from "../hooks/useSuperHerosData";
-
+import { Link } from "react-router-dom";
 const RQSuperHeroesPage = () => {
   const onSuccess = (data) => {
-    console.log(data);
+    console.log();
   };
   const onError = (error) => {
-    console.log(error);
+    console.log();
   };
   const { data, isLoading, isFetching, isError, error, refetch } =
     useSuperHerosData(onSuccess, onError);
@@ -20,14 +20,11 @@ const RQSuperHeroesPage = () => {
     <div>
       <h1>RQ Super Heroes</h1>
       <button onClick={refetch}>fetch</button>
-      {/* {data?.data.map((hero) => (
-        <div key={hero.id}>
+      {data?.data.map((hero) => (
+        <Link to={`/rq-super-heroes/${hero.id}`} key={hero.id}>
           <p>{hero.name}</p>
-        </div>
-      ))} */}
-      {data?.map((heroName) => {
-        return <div key={heroName}>{heroName}</div>;
-      })}
+        </Link>
+      ))}
     </div>
   );
 };
