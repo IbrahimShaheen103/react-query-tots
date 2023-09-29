@@ -52,7 +52,7 @@
     },
     {
       "id": 4,
-      "color": "white"
+      "color": "crimson"
     },
     {
       "id": 5,
@@ -63,11 +63,11 @@
       "color": "purple"
     },
     {
-      "id": 3,
+      "id": 7,
       "color": "yellow"
     },
     {
-      "id": 4,
+      "id": 8,
       "color": "brown"
     }
   ]
